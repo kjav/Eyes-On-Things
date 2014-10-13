@@ -1556,5 +1556,5 @@ function EYEBALL(e_radius, p_radius, border_width) {
   pupil.style.left = '50%';
   pupil.style.top = '50%';
 
-  eye.style.zIndex = 999999999;
+  eye.style.zIndex = 100000000000000000000000000000000000000000000000000000000000;
 }
