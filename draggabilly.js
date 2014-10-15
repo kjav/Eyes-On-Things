@@ -1531,8 +1531,8 @@ function EYEBALL(e_radius, p_radius, border_width) {
   var draggy = new Draggabilly(eye);
   var draggy2 = new Draggabilly(pupil, { containment: true });
 
-  draggy2.on('dragStart', function() { draggy.disable(); })
-  draggy2.on('dragEnd', function() { draggy.enable(); })
+  draggy2.on('dragStart', function() { draggy.disable(); });
+  draggy2.on('dragEnd', function() { draggy.enable(); });
 
   eye.style.borderRadius = '50%';
   eye.style.width = e_radius.toString() + 'px';
@@ -1556,6 +1556,6 @@ function EYEBALL(e_radius, p_radius, border_width) {
   pupil.style.left = '50%';
   pupil.style.top = '50%';
 
-  eye.style.zIndex = 2147483646;
-  pupil.style.zIndex = 2147483647;
+  eye.style.zIndex = 2000000001;
+  pupil.style.zIndex = 2000000002;
 }
